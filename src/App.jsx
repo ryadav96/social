@@ -14,9 +14,9 @@ function App() {
         <div>
           <Routes>
             <Route path="/" element={<AuthForm />} />
-            <Route path="timeline" element={<GreetingWidget />} />
-            <Route path="register" element={<SignupPage />} />
-            <Route path="login" element={<AuthForm />} />
+            <Route path="/timeline" element={<GreetingWidget />} />
+            <Route path="/register" element={<SignupPage />} />
+            <Route path="/login" element={<AuthForm />} />
           </Routes>
         </div>
       </div>
