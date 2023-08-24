@@ -1,7 +1,8 @@
 import "./App.css";
 import GreetingWidget from "./components/GreetingWidget";
 import { Routes, Route } from "react-router-dom";
-import AuthForm from "./pages/AuthForm";
+import AuthForm from "./pages/Login";
+import SignupPage from "./pages/SignupPage";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
           <Routes>
             <Route path="/" element={<AuthForm />} />
             <Route path="timeline" element={<GreetingWidget />} />
-            <Route path="signup" element={<GreetingWidget />} />
+            <Route path="register" element={<SignupPage />} />
+            <Route path="login" element={<AuthForm />} />
           </Routes>
         </div>
       </div>
